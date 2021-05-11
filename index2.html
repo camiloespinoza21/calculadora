@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+    <title>test java script</title>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="Mi Segundo Formulario">
+
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <script type="text/javascript">
+
+
+
+        function suma() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var sum = parseInt(n1) + parseInt(n2);
+
+
+
+            alert("El resultado de la multiplicacion es "+ sum);
+
+
+
+        }
+        function restar() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var res = parseInt(n1) - parseInt(n2);
+
+
+
+            alert("El resultado de la resta es "+ res);
+
+
+
+        }
+        function multi() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var res = parseInt(n1) * parseInt(n2);
+
+
+
+            alert("El resultado de la multiplicacion es "+ res);
+
+
+
+        }
+        function div() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var res = parseInt(n1) / parseInt(n2);
+
+
+
+            alert("El resultado de la divicion es "+ res);
+
+
+
+        }
+
+
+    </script>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <form>
+
+
+
+        <label for="num1">Número 1</label>
+
+        <input type="number" class="form-control" id="num1" >
+
+        <br>
+        <br>
+
+
+
+
+        <label for="num2">Número 2</label>
+
+        <input type="number" class="form-control" id="num2" >
+
+
+
+
+        <button type="submit" class="btn btn-primary" onclick="suma()">Sumar</button>
+        <button type="submit" class="btn btn-primary" onclick="restar()">restar</button>
+        <button type="submit" class="btn btn-primary" onclick="multi()">multi</button>
+        <button type="submit" class="btn btn-primary" onclick="div()">div</button>
+
+    </form>
+</body>
+
+</html>
